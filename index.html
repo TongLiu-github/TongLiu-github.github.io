@@ -1,31 +1,64 @@
-<html> 
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta name="generator" content="Aspose.Words for .NET 22.10.0" />
-<title>
-</title>
-<style type="text/css">body { text-align:justify; widows:0; orphans:0; font-family:等线; font-size:10.5pt }p { margin:0pt }
+<title></title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style type="text/css">
+body { text-align:justify; widows:0; orphans:0; font-family:等线; font-size:10.5pt }
+p { margin:0pt }
+#mediaContainer {
+  display: flex;
+  align-items: center; /* Vertical alignment */
+}
+#audioPlayer {
+  margin-left: 10px; /* Space between the image and the player */
+  background-color: #808080; /* Grey background */
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#playBtn {
+  font-size: 10px;
+  color: white; /* White icon color */
+  cursor: pointer;
+}
 </style>
 </head>
-<audio src="file:///D:/Wei%20Lee/1.mp3" controls>
-</audio>
 <body>
-<div>
-<p>
-<!-- <span style="height:0pt; text-align:left; display:block; position:absolute; z-index:0">
-<img src="3.jpg" width="118" height="169" alt="me" style="margin-top:17.49pt; margin-left:323.81pt; -aw-left-pos:323.81pt; -aw-rel-hpos:column; -aw-rel-vpos:paragraph; -aw-top-pos:17.49pt; -aw-wrap-type:none; position:absolute" />
-</span> -->
-<img src="11.png" width="159" height="66" alt="name photo" style="-aw-left-pos:0pt; -aw-rel-hpos:column; -aw-rel-vpos:paragraph; -aw-top-pos:0pt; -aw-wrap-type:inline" />
-</p>
-<p  style="font-size:16pt"><span>Do some research that's both interesting and meaningful to me. </span></p>
-<!-- <p  style="font-size:16pt"><span>Every work is a learning experience. </span></p> -->
-<p  style="font-size:16pt"><span style="-aw-import:ignore">&#xa0;</span></p>
-<!-- <p  style="font-size:16pt"><span>Department of computer science</span></p> -->
-<p  style="font-size:16pt"><span>PhD student</span></p>
-<p  style="font-size:16pt"><span>Ludwig Maximilian University of Munich (LMU)</span></p>
-<p  style="font-size:16pt"><span>Munich, Germany</span></p>
+<div id="mediaContainer">
+  <img src="11.png" width="159" height="66" alt="name photo" style="-aw-left-pos:0pt; -aw-rel-hpos:column; -aw-rel-vpos:paragraph; -aw-top-pos:0pt; -aw-wrap-type:inline" />
+  <div id="audioPlayer">
+    <audio id="myAudio" src="file:///D:/Wei%20Lee/1.mp3"></audio>
+    <div id="playBtn"><i class="fas fa-play"></i></div>
+  </div>
+</div>
 
+<script>
+  var myAudio = document.getElementById("myAudio");
+  var playBtn = document.getElementById("playBtn");
+  playBtn.addEventListener('click', function () {
+    if (myAudio.paused) {
+      myAudio.play();
+      playBtn.innerHTML = '<i class="fas fa-pause"></i>'; // Change to pause icon
+    } else {
+      myAudio.pause();
+      playBtn.innerHTML = '<i class="fas fa-play"></i>'; // Change to play icon
+    }
+  });
+  myAudio.addEventListener('ended', function() {
+    playBtn.innerHTML = '<i class="fas fa-play"></i>'; // Reset to play icon when audio finishes
+  });
+</script>
+<p style="font-size:16pt"><span>Do some research that's both interesting and meaningful to me. </span></p>
+<p style="font-size:16pt"><span>PhD student</span></p>
+<p style="font-size:16pt"><span>Ludwig Maximilian University of Munich (LMU)</span></p>
+<p style="font-size:16pt"><span>Munich, Germany</span></p>
 <h2 id="publications">Publications</h2>
 <p  style="font-size:14pt"> 3. [LLMs] [Psycholinguistics] <b>Tong Liu</b>, Iza Škrjanec, Vera Demberg. “Temperature-scaling surprisal estimates improve fit to human reading times – but does it do so for the “right reasons”?”. Association for Computational Linguistics (ACL), 2024, to appear.   
 </p>
@@ -39,4 +72,5 @@
 <p><img src="background.jpg" width="554" height="415" alt="A darkness belongs to me" style="margin-top:20pt; -aw-left-pos:0pt; -aw-rel-hpos:column; -aw-rel-vpos:paragraph; -aw-top-pos:0pt; -aw-wrap-type:inline" />
 </p></div>
 
-</body></html>
+</body>
+</html>
