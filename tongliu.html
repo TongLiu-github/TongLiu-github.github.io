@@ -1,0 +1,172 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Wei Lee
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #000; /* Ensure the background is black */
+            color: #C0BDBD; /* Change the text color to dark gray */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            text-align: left; /* Align text to the left */
+        }
+        .title2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            text-align: left; /* Align text to the left */
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .content img {
+            max-width: 30%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 1 40%;
+        }
+        .text {
+            flex: 1 1 50%;
+            text-align: left;
+        }
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .text {
+                text-align: center;
+            }
+        }
+       .underline {
+            text-decoration: underline; /* Add underline to specific elements */
+        }
+       .calendar-container {
+            margin-top: 35rem; /* Adjust this value to move the calendar section up or down */
+        }
+       .limited-width {
+            max-width: 1100px; /* Set the maximum width for the text container */
+            margin: 0 auto; /* Center the container horizontally */
+        }
+  </style>
+ </head>
+<body class="h-screen flex flex-col justify-center items-center relative">
+  <div class="calendar-container">
+    <img id="mainImage" alt="Placeholder image for Wei Lee" class="mt-4" height="800" src="background.jpg" width="1100"/>
+  </div>
+
+
+    <div class="container">
+        <div class="limited-width">
+            <div class="title">Tong Liu</div>
+            <div class="content">
+                <div class="text">
+                    <p>I am a Ph.D. student at Informatics department at
+                        <a href="https://www.lmu.de/en/">LMU Munich</a>
+                        in Germany. Previously, I obtained my master in Physics at LMU Munich.
+                        My current research interests focus on alignment and multimodal LLMs.
+                    </p>
+                    <p>Contact: Liu@dbs.ifi.lmu.de</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+  <div class="limited-width">
+    <div class="title2">Publications </div>
+      <div class="content">
+        <div class="text">
+            <p>3. [LLMs] [Psycholinguistics]
+                Temperature-scaling Surprisal Estimates Improve Fit to Human Reading Times – But Does It Do So for the “Right Reasons”?
+            </p>
+            <p>
+                <a class="underline">Tong Liu</a>,
+                <a href="https://www.uni-saarland.de/en/lehrstuhl/demberg/members/iza-skrjanec.html">Iza Škrjanec</a>,
+                <a href="https://www.uni-saarland.de/lehrstuhl/demberg/members/verademberg.html">Vera Demberg</a>
+            </p>
+            <p>
+            Association for Computational Linguistics (<b>ACL</b>), 2024, to appear.
+            </p>
+            <a href="https://openreview.net/pdf?id=78VAVcTycYnz">
+                <font color="#808080">arXiv</font>
+            </a>
+            &nbsp;&nbsp;
+            <a href="https://github.com/TongLiu-github/TemperatureScaling4RTs">
+                <font color="#808080">code</font>
+            </a>
+<!--            <a class="underline" href="https://openreview.net/pdf?id=zdAXhcemNF">-->
+<!--                <font color="#808080">arXiv</font>-->
+<!--            </a>-->
+<!--            &nbsp;&nbsp;-->
+<!--            <a class="underline" href="https://github.com/TongLiu-github/TemperatureScaling4RTs">-->
+<!--                <font color="#808080">code</font>-->
+<!--            </a>-->
+            </p>
+            <p>2. [Graph] [Calibration]
+                On Calibration of Graph Neural Networks for Node Classification
+            </p>
+            <p>
+                <a class="underline">Tong Liu</a>*,
+                <a href="https://scholar.google.de/citations?user=OU8wf5kAAAAJ&hl=de">Yushan Liu</a>*,
+                <a href="https://scholar.google.com/citations?user=_P30l-0AAAAJ&hl=de">Marcel Hildebrandt</a>,
+                <a href="https://scholar.google.com/citations?user=5xMzoTwAAAAJ&hl=en">Mitchell Joblin</a>,
+                <a href="https://hangligit.github.io/">Hang Li</a>,
+                <a href="https://scholar.google.com/citations?user=xIJHTUwAAAAJ&hl=en">Volker Tresp</a>
+            </p>
+            International Joint Conference on Neural Networks (<b>IJCNN</b>), 2022.
+            </p>
+            <a href="https://arxiv.org/abs/2206.01570">
+                <font color="#808080">arXiv</font>
+            </a>
+            &nbsp;&nbsp;
+            <a href="https://github.com/TongLiu-github/calGNN">
+                <font color="#808080">code</font>
+            </a>
+            </p>
+            <p>1. [HEP] [Higgs]
+                Searching for the Doubly-charged Higgs Bosons in the Georgi-Machacek Model at the Electron-proton Colliders
+            </p>
+            <p>
+                Physical Review D (<b>PRD</b>), 2017.
+            </p>
+            <p>
+            <a href="https://inspirehep.net/authors/1669593?ui-citation-summary=true">Hao Sun</a>,
+            <a href="https://inspirehep.net/authors/1885264?ui-citation-summary=true">Xuan Luo</a>,
+            <a href="https://scholar.google.com/citations?user=wy-mTKIAAAAJ&hl=en">Wei Wei</a>,
+            <a class="underline">Tong Liu</a>
+            </p>
+            <a href="https://arxiv.org/abs/1710.06284">
+                <font color="#808080">arXiv</font>
+            </a>
+            </p>
+            <br>
+        </div>
+    </div>
+  </div>
+  </div>
+
+</body>
+</html>
