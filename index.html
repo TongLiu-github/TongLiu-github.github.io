@@ -98,11 +98,19 @@
             max-width: 1100px; /* Set the maximum width for the text container */
             margin: 0 auto; /* Center the container horizontally */
         }
-    </style>
-    </head>
-
-
-
+        .highlighted-paper {
+            /* border-left: 2px solid #8A7E6B; */
+            padding: 0.5rem 0 0.5rem 1rem;
+            margin: 0.5rem 0 0.5rem -1rem;
+            background: linear-gradient(to right, rgba(200, 190, 170, 0.05), transparent 70%);
+            border-radius: 0 4px 4px 0;
+        }
+        .highlighted-paper .paper-title {
+            color: #CCC5B6;
+            font-weight: 600;
+        }
+            </style>
+            </head>
 <body>
 
   <!-- information -->
@@ -208,32 +216,26 @@
                     </a>
                     </p>
 
-                    <p>2. [LLMs] [Psycholinguistics]
-                        Temperature-scaling Surprisal Estimates Improve Fit to Human Reading Times – But Does It Do So for the “Right Reasons”?
-                    </p>
-                    <p>
-                        <a class="underline">Tong Liu</a>,
-                        <a href="https://www.uni-saarland.de/en/lehrstuhl/demberg/members/iza-skrjanec.html">Iza Škrjanec</a>,
-                        <a href="https://www.uni-saarland.de/lehrstuhl/demberg/members/verademberg.html">Vera Demberg</a>
-                    </p>
-                    <p>
-                    Association for Computational Linguistics (<b>ACL</b>) main, 2024.
-                    </p>
-                    <a href="https://aclanthology.org/2024.acl-long.519.pdf">
-                        <font color="#808080">arXiv</font>
-                    </a>
-                    &nbsp;&nbsp;
-                    <a href="https://github.com/TongLiu-github/TemperatureScaling4RTs">
-                        <font color="#808080">code</font>
-                    </a>
-                <!--            <a class="underline" href="https://openreview.net/pdf?id=zdAXhcemNF">-->
-                <!--                <font color="#808080">arXiv</font>-->
-                <!--            </a>-->
-                <!--            &nbsp;&nbsp;-->
-                <!--            <a class="underline" href="https://github.com/TongLiu-github/TemperatureScaling4RTs">-->
-                <!--                <font color="#808080">code</font>-->
-                <!--            </a>-->
-                    </p>
+<div class="highlighted-paper">
+    <p class="paper-title">2. [LLMs] [Psycholinguistics]
+        Temperature-scaling Surprisal Estimates Improve Fit to Human Reading Times – But Does It Do So for the "Right Reasons"?
+    </p>
+    <p>
+        <a class="underline">Tong Liu</a>,
+        <a href="https://www.uni-saarland.de/en/lehrstuhl/demberg/members/iza-skrjanec.html">Iza Škrjanec</a>,
+        <a href="https://www.uni-saarland.de/lehrstuhl/demberg/members/verademberg.html">Vera Demberg</a>
+    </p>
+    <p>
+    Association for Computational Linguistics (<b>ACL</b>) main, 2024.
+    </p>
+    <a href="https://aclanthology.org/2024.acl-long.519.pdf">
+        <font color="#808080">arXiv</font>
+    </a>
+    &nbsp;&nbsp;
+    <a href="https://github.com/TongLiu-github/TemperatureScaling4RTs">
+        <font color="#808080">code</font>
+    </a>
+</div>
                     <p>1. [Graph] [Calibration]
                         On Calibration of Graph Neural Networks for Node Classification
                     </p>
